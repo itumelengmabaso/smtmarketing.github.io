@@ -250,7 +250,7 @@ img.logo-image{
 .logo-container{
   display: grid;
   justify-content: center;
-  transform: translate(50px,50px);
+  transform: translate(250px,50px);
 }
 .globe{
    
