@@ -250,7 +250,7 @@ img.logo-image{
 .logo-container{
   display: grid;
   justify-content: center;
-  transform: translate(250px,50px);
+  transform: translate(150px,50px);
 }
 .globe{
    
@@ -267,6 +267,4 @@ img.logo-image{
   justify-content: center;
   height: 300px;
   width: 100%;
-  left: 0;
-  right: 0;
 }
