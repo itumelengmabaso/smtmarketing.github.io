@@ -1,270 +1,96 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-@import url('https://fonts.googleapis.com/css?family=Sacramento');
-html,body {
-  font-size: 14px;
-  min-width: 640px;
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+ 
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+html{
+	 font-family: 'Quicksand', monospace;
+	 font-weight: bold;
+}
+nav ul a,
+nav .brand-logo {
+  color: #fff;
 }
 
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 16px;
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
   }
 }
 
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 20px;
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
   }
 }
 
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 28px;
-  }
+.icon-block {
+  padding: 0 15px;
 }
-body {
-  font-family: 'Nunito', sans-serif;
-  pdding-top: 50px;
-  margin: auto;
-  opacity: 0.8;
-  background: url("https://images.pexels.com/photos/1451447/pexels-photo-1451447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
-    no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color: #fff;
-  color: #000;
+.icon-block .material-icons {
+  font-size: inherit;
 }
 
-.fullscreen{
-  height: 100vh;
+footer.page-footer {
+  margin: 0;
 }
 
-h1 {
-  padding-top: 0px;
-  font-size: 65px;
+#download-button{
+  border-radius: 50px;
 }
 
-h3 {
-  padding-top: 20px;
-  color: lightGray;
+h1{
+  borde: 1px solid brown;
 }
 
-h4 {
-  color: lightGray;
-  padding-top: 30px;
+.main-title{
+  padding: 20px;
+  border-radius: 100px;
 }
-
-a {
-  color: #000;
+.btn{
+	border-radius: 100px;
 }
-
-legend {
-  font-size: 28px;
-  font-style: bold;
-  color: lightGray;
+.btn-flat{
+	margin-top: 20px;
+	border: 1px solid #03A9F4;
+	border-radius: 50px;
 }
-
-code {
-  font-size: 18px;
-  color: lightGray;
-  background-color: #fff;
+.card{
+	padding: 20px 0;
+	border-radius: 20px;
 }
-
-.navbar-toggle {
-  background-color: #fff;
+.carousel{
+	border-radius: 50px;
 }
-
-.collapse {
-  background-color: #fff;
+p{
+	padding: 20px;
 }
-
-.starter-template {
-  padding: 40px 15px;
-  padding-top: 25%;
-  padding-bottom: 25%;
-  padding-left: 20%;
-  padding-right: 20%;
-  text-align: center;
-  color: #000;
-}
-
-.lead {
-  color: #000;
-  text-align: center;
-  padding-top: -10px;
-}
-.carousel {
-  background-color: #fff;
-  margin: auto;
-  width: auto;
-  padding-bottom: 75px;
-}
-
-.carousel-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  border-radius: 0.5em;
-}
-.carousel-inner > .item > img {
-  margin: 0 auto;
-  width: auto;
-  max-height: 410px;
-  border-radius: 0.5em;
-}
-
-.navbar {
-  border-color: #fff;
-  background-color: #fff;
-}
-.navbar-header {
-  background-color: #fff;
-}
-
-.btn {
-  background-color: #fff;
-  border-color: gray;
-  width: 100px;
-  height: 40px;
-}
-
-.container {
-  background-color: #fff;
-  width: auto;
-}
-#tgl {
-  background-color: #fff;
-}
-
-#signup-btn {
-  background-color: #dee6ee;
-  color: #524a4a;
-}
-
-#information {
-  padding-top: 20px;
-  padding-bottom: 75px;
-  height: auto;
-  background-color: #fff;
-}
-
-#about-us {
-  padding-top: 50px;
-  height: auto;
-  background-color: black;
-}
-
-#contact-us {
-  padding-top: 50px;
-  height: auto;
-  background-color: black;
-  color: white;
-}
-
-#footer {
-  padding-top: 60px;
-  padding-bottom: 50px;
-  height: 100px;
-  background-color: black;
-}
-
-.jumbotron {
-  background: #358cce;
-  color: #fff;
-  border-radius: 0px;
-}
-.jumbotron-sm {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-.jumbotron small {
-  color: #fff;
-}
-.h1 small {
-  font-size: 24px;
-}
-.form-group {
-  color: black;
-}
-#myCarousel {
-  padding-top: 25px;
-}
-#myCarousell {
-  padding-top: 25px;
-}
-
-#tvProduction {
-  background-color: #fff;
-  padding-top: 75px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-p,li,legend{
-  color: #fff;
-}
-.black-text{
-  color: #000;
-}
-.pull-right{
-  color: black;
-}
-.motto{
-  color:#666;
-}
-.email{
-  color: lightGray;
-}
-.email:hover{
-  text-decoration: none;
-  color: white;
-}
-
-
-
-.logo-name{
-  font-family: 'Sacramento', cursive;
-  font-size: 80px;
-  padding : 5px 0;
-  color: #5a4538;
-  text-align: center;
-}
-img.logo-image{
-  margin: 0 auto;
-  fiter: drop-shadow(1px 1px 1px #5a4538);
-  text-align: center;
-  border-radius: 500px;
-}
-.name{
-  postion: absolute;
-  text-align: center;
-  margin: 0 auto;
-  opacity: .98;
-  border-radius: 15px;
-  padding: 5;
-  background: #f7e2d3;
-  box-shadow: 2px 2px 2px 0 #7d7d7d;
-  trnsform: translate(10px, 10px);
-  width: 500px;
-}
-.logo-container{
-  display: grid;
-  justify-content: center;
-  transform: translate(150px,50px);
-}
-.globe{
-   
-}
-.holder{
-  margin: 0 auto;
-  display: grid;
-  justify-content: center;
-}
-.place-center{
-  position: absolute;
-  margin: 0 auto;
-  display: grid;
-  justify-content: center;
-  height: 300px;
-  width: 100%;
+.span{
+	padding: 20px;
 }
